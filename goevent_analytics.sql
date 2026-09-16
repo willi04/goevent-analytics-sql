@@ -1,10 +1,6 @@
 SELECT * 
 FROM tickets; 
-# Fiche SQL GoEvent — Intermédiaire → Avancé
-### 30 exercices en 8 modules + 2 mini-projets (Data Cleaning & EDA)
-
 ## MODULE 1 — JOINs avancés (3+ tables, self-join)
-# *Consolide le piège de l'Ex 16 : bien choisir la colonne de jointure.*
 -- 1.1** Pour chaque paiement **complété**, affiche le montant, le nom de l'acheteur et le titre de l'événement. 
 SELECT full_name, amount, title
 FROM goevent_db.payments t1
@@ -42,7 +38,7 @@ FROM goevent_db.tickets t1
 ;
 
 ## MODULE 2 — Anti-jointures & semi-jointures
--- Consolide le piège de l'Ex 18 : « ce qui existe d'un côté mais pas de l'autre ».
+
 -- 2.1** Trouve les utilisateurs qui n'ont **jamais acheté de ticket**
 SELECT full_name AS non_acheteur
 FROM goevent_db.tickets t1
@@ -109,7 +105,6 @@ WHERE e.price = (
 ORDER BY e.category;
 
 ## MODULE 4 — Agrégation avancée (GROUP BY multiple, pivot, %)
--- *Consolide le piège de l'Ex 22 : granularité du GROUP BY.*
 -- 4.1** Par événement, calcule le **revenu total** (`SUM(amount)`), la **commission plateforme** (`SUM(platform_fee)`) 
 -- et la **part organisateur** (`SUM(organizer_amount)`), sur les paiements complétés uniquement.
 SELECT 
