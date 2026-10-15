@@ -1,6 +1,6 @@
 # GoEvent Analytics — Nettoyage & analyse de données en SQL
 
-Projet d'analyse de données SQL mené sur les données réelles de **GoEvent Africa**, une plateforme de billetterie événementielle que j'ai conçue et déployée en République Centrafricaine (goevent.africa).
+Projet d'analyse de données SQL mené sur les données en pré-production de **GoEvent Africa**, une plateforme de billetterie événementielle que j'ai conçue et déployée en République Centrafricaine (goevent.africa).
 
 L'objectif : partir des données brutes d'exploitation, les **nettoyer et fiabiliser**, construire une **table de faits analytique**, puis en extraire des **enseignements métier** sur l'activité de la plateforme en phase de lancement.
 
